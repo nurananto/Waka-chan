@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - '**/manifest.json'
+  
+  workflow_dispatch:  # ← TAMBAH INI untuk manual trigger
 
 permissions:
   contents: write
