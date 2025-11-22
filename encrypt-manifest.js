@@ -1,8 +1,8 @@
 /**
  * ENCRYPT-MANIFEST.JS
- * 🔐 Encrypts ONLY newly uploaded manifest.json files
- * 📌 Uses git diff to detect new/modified manifests
- * ✅ Does NOT touch old encrypted manifests
+ * 🔐 Encrypts manifest.json files with AES-256
+ * 📌 Supports both normal mode (git diff) and force mode (scan all)
+ * ✅ Does NOT re-encrypt already encrypted manifests
  */
 
 const fs = require('fs');
@@ -16,7 +16,7 @@ const { execSync } = require('child_process');
 
 const ENCRYPTION_ALGORITHM = 'aes-256-cbc';
 const SECRET_TOKEN = process.env.SECRET_TOKEN || 'XfXqB1d0ud6rZCVPqzpzKxowGVpZ0GBU';
-const FORCE_SCAN_ALL = process.env.FORCE_SCAN_ALL === 'true'; // Force mode untuk scan semua
+const FORCE_SCAN_ALL = process.env.FORCE_SCAN_ALL === 'true';
 
 // Derive key from token (32 bytes for AES-256)
 function deriveKey(token) {
@@ -49,6 +49,34 @@ function isEncrypted(text) {
 
 function getModifiedManifests() {
     try {
+        // 🔥 FORCE MODE: Skip git diff, scan ALL manifests
+        if (FORCE_SCAN_ALL) {
+            console.log('🔥 Force mode enabled - will scan ALL manifests\n');
+            
+            try {
+                const output = execSync('find . -name "manifest.json" -not -path "./.git/*"', {
+                    encoding: 'utf-8',
+                    stdio: ['pipe', 'pipe', 'pipe']
+                }).trim();
+                
+                if (output) {
+                    const allManifests = output.split('\n')
+                        .map(path => path.replace('./', ''))
+                        .filter(path => fs.existsSync(path));
+                    
+                    console.log(`📋 Found ${allManifests.length} total manifest(s) in repo`);
+                    console.log('📝 Manifests found:');
+                    allManifests.forEach(file => console.log(`   - ${file}`));
+                    
+                    return allManifests;
+                }
+            } catch (findError) {
+                console.error('❌ Force scan failed:', findError.message);
+                return [];
+            }
+        }
+        
+        // Normal mode: use git diff
         let output = '';
         
         // Try to get changed files between last 2 commits
@@ -197,9 +225,11 @@ function encryptManifest(filePath, secretKey) {
 // ============================================
 
 function main() {
+    const modeText = FORCE_SCAN_ALL ? '🔥 FORCE MODE: Scan ALL manifests' : '🔐 Encrypts NEW manifests only';
+    
     console.log('╔═══════════════════════════════════════╗');
     console.log('║     MANIFEST ENCRYPTION SCRIPT        ║');
-    console.log('║   🔐 Encrypts NEW manifests only      ║');
+    console.log(`║   ${modeText.padEnd(37)} ║`);
     console.log('╚═══════════════════════════════════════╝\n');
     
     // Derive encryption key
