@@ -25,18 +25,7 @@
     "imageFormat": "webp",
     "lockedChapters": []
   },
-  "chapters": {
-    "25": {
-      "title": "Chapter 25",
-      "chapter": 25,
-      "folder": "25",
-      "uploadDate": "2025-11-22T08:58:51+07:00",
-      "totalPages": 32,
-      "pages": 32,
-      "locked": false,
-      "views": 0
-    }
-  },
-  "lastUpdated": "2025-11-22T09:10:33+07:00",
-  "lastChapterUpdate": "2025-11-22T08:58:51+07:00"
+  "chapters": {},
+  "lastUpdated": "2025-11-22T09:12:52+07:00",
+  "lastChapterUpdate": "2025-11-22T09:12:52+07:00"
 }
