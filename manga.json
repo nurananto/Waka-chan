@@ -1,0 +1,31 @@
+{
+  "manga": {
+    "title": "Waka-chan wa Kyou mo Azatoi",
+    "alternativeTitle": "和歌ちゃんは今日もあざとい",
+    "cover": "https://raw.githubusercontent.com/nurananto/NuranantoScanlation/refs/heads/main/covers/wakachan-c15f762d-5437-4f73-aa85-64a7b686ddba.jpg",
+    "description": "—Tomoya, mahasiswa tahun pertama yang masih perjaka dan bertekad punya pacar, mulai akrab dengan gadis cantik berhati lembut dari klub yang sama, Sakuraba Waka. Namun, ia tak punya cukup keberanian untuk mengambil langkah pertama. Hingga suatu hari, Tomoya tanpa sengaja menyaksikan “sisi lain” dari Waka…?",
+    "author": "Shimamura",
+    "artist": "Shimamura",
+    "genre": [
+      "Drama",
+      "Shounen",
+      "Comedy",
+      "Romance",
+      "School Life",
+      "Slice of Life"
+    ],
+    "status": "END",
+    "views": 0,
+    "links": {
+      "mangadex": "https://mangadex.org/title/57fe3f00-8626-462b-8f75-fce0e6faa6be/a-hidden-side-to-my-crush",
+      "raw": "https://www.comico.jp/comic/908"
+    },
+    "repoUrl": "https://raw.githubusercontent.com/nurananto/wakachan/main/",
+    "imagePrefix": "Image",
+    "imageFormat": "webp",
+    "lockedChapters": []
+  },
+  "chapters": {},
+  "lastUpdated": "2025-11-22T08:56:31+07:00",
+  "lastChapterUpdate": "2025-11-22T08:56:31+07:00"
+}
