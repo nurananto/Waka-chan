@@ -38,7 +38,7 @@ jobs:
       - name: 🔐 Detect and Encrypt NEW manifests only
         env:
           SECRET_TOKEN: ${{ secrets.MANIFEST_SECRET_TOKEN }}
-          FORCE_SCAN_ALL: 'true'  # Set 'true' untuk scan SEMUA manifest (ignore git diff)
+          FORCE_SCAN_ALL: 'false'  # Set 'true' untuk scan SEMUA manifest (ignore git diff)
         run: node encrypt-manifest.js
       
       - name: 💾 Commit encrypted manifests
