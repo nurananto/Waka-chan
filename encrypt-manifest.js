@@ -16,6 +16,7 @@ const { execSync } = require('child_process');
 
 const ENCRYPTION_ALGORITHM = 'aes-256-cbc';
 const SECRET_TOKEN = process.env.SECRET_TOKEN || 'XfXqB1d0ud6rZCVPqzpzKxowGVpZ0GBU';
+const FORCE_SCAN_ALL = process.env.FORCE_SCAN_ALL === 'true'; // Force mode untuk scan semua
 
 // Derive key from token (32 bytes for AES-256)
 function deriveKey(token) {
@@ -48,11 +49,39 @@ function isEncrypted(text) {
 
 function getModifiedManifests() {
     try {
-        // Get list of changed files in last commit
-        const output = execSync('git diff --name-only HEAD~1 HEAD', { 
-            encoding: 'utf-8',
-            stdio: ['pipe', 'pipe', 'pipe']
-        }).trim();
+        let output = '';
+        
+        // Try to get changed files between last 2 commits
+        try {
+            output = execSync('git diff --name-only HEAD~1 HEAD', { 
+                encoding: 'utf-8',
+                stdio: ['pipe', 'pipe', 'pipe']
+            }).trim();
+        } catch (diffError) {
+            // If diff fails (e.g., first commit), get all manifest files
+            console.log('ℹ️  Could not diff commits, checking all manifests...');
+            
+            try {
+                output = execSync('find . -name "manifest.json" -not -path "./.git/*"', {
+                    encoding: 'utf-8',
+                    stdio: ['pipe', 'pipe', 'pipe']
+                }).trim();
+                
+                // Convert find output to array and clean paths
+                if (output) {
+                    const allManifests = output.split('\n')
+                        .map(path => path.replace('./', ''))
+                        .filter(path => fs.existsSync(path));
+                    
+                    console.log(`📋 Found ${allManifests.length} total manifest(s)`);
+                    console.log(`📄 Manifest files detected: ${allManifests.length}`);
+                    
+                    return allManifests;
+                }
+            } catch (findError) {
+                console.warn('⚠️  Could not find manifests:', findError.message);
+            }
+        }
         
         if (!output) {
             console.log('ℹ️  No changes detected');
@@ -61,21 +90,55 @@ function getModifiedManifests() {
         
         const changedFiles = output.split('\n');
         
-        // Filter only manifest.json files
-        const manifestFiles = changedFiles.filter(file => 
-            file.endsWith('manifest.json') && 
-            !file.startsWith('.') &&
-            fs.existsSync(file)
-        );
-        
+        // DEBUG: Log semua file yang berubah
         console.log(`📋 Changed files: ${changedFiles.length}`);
+        console.log('📝 Files changed:');
+        changedFiles.forEach(file => console.log(`   - ${file}`));
+        
+        // Filter only manifest.json files
+        const manifestFiles = changedFiles.filter(file => {
+            const endsWithManifest = file.endsWith('manifest.json');
+            const notHidden = !file.startsWith('.');
+            const exists = fs.existsSync(file);
+            
+            // DEBUG: Log filter results
+            if (file.includes('manifest')) {
+                console.log(`   🔍 ${file}:`);
+                console.log(`      - Ends with manifest.json: ${endsWithManifest}`);
+                console.log(`      - Not hidden: ${notHidden}`);
+                console.log(`      - Exists: ${exists}`);
+            }
+            
+            return endsWithManifest && notHidden && exists;
+        });
+        
         console.log(`📄 Manifest files detected: ${manifestFiles.length}`);
         
         return manifestFiles;
         
     } catch (error) {
         console.warn('⚠️  Could not detect git changes:', error.message);
-        console.log('ℹ️  This might be the first commit - skipping encryption');
+        console.log('ℹ️  Trying to find all manifests as fallback...');
+        
+        // Fallback: scan all manifest.json files
+        try {
+            const output = execSync('find . -name "manifest.json" -not -path "./.git/*"', {
+                encoding: 'utf-8',
+                stdio: ['pipe', 'pipe', 'pipe']
+            }).trim();
+            
+            if (output) {
+                const allManifests = output.split('\n')
+                    .map(path => path.replace('./', ''))
+                    .filter(path => fs.existsSync(path));
+                
+                console.log(`📋 Found ${allManifests.length} manifest(s) as fallback`);
+                return allManifests;
+            }
+        } catch (findError) {
+            console.error('❌ Fallback failed:', findError.message);
+        }
+        
         return [];
     }
 }
