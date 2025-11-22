@@ -1,0 +1,62 @@
+name: Manga Automation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/manifest.json'      # Trigger dari manifest (bukan gambar)
+      - 'manga-config.json'
+      - 'manga.json'
+  
+  schedule:
+    - cron: '17 0 * * *'  # 00:17 WIB setiap hari
+  
+  workflow_dispatch:
+  
+  workflow_run:
+    workflows: ["Encrypt New Manifest", "Sync Cover from Website"]
+    types:
+      - completed
+
+permissions:
+  contents: write
+
+jobs:
+  manga-automation:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: 📚 Generate manga.json
+        run: node manga-automation.js generate
+      
+      - name: 🔄 Sync chapters
+        run: node manga-automation.js sync
+      
+      - name: 📊 Update manga views
+        run: node manga-automation.js update-views
+      
+      - name: 📖 Update chapter views
+        run: node manga-automation.js update-chapters
+      
+      - name: 💾 Commit and push
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git pull origin main --rebase || true
+          git add manga.json manga-config.json pending-views.json pending-chapter-views.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "✅ No changes"
+          else
+            git commit -m "📊 Auto-update [skip ci]"
+            git push origin main
+          fi
