@@ -15,12 +15,12 @@
       "Slice of Life"
     ],
     "status": "END",
-    "views": 0,
+    "views": 5,
     "links": {
       "mangadex": "https://mangadex.org/title/57fe3f00-8626-462b-8f75-fce0e6faa6be/a-hidden-side-to-my-crush",
       "raw": "https://www.comico.jp/comic/908"
     },
-    "repoUrl": "https://raw.githubusercontent.com/nurananto/wakachan/main/",
+    "repoUrl": "https://raw.githubusercontent.com/nurananto/Waka-chan/main/",
     "imagePrefix": "Image",
     "imageFormat": "webp",
     "lockedChapters": []
@@ -34,9 +34,9 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 0
+      "views": 2
     }
   },
-  "lastUpdated": "2025-11-22T10:23:03+07:00",
+  "lastUpdated": "2025-11-22T10:35:44+07:00",
   "lastChapterUpdate": "2025-11-22T08:58:51+07:00"
 }
