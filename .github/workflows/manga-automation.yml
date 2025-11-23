@@ -10,7 +10,7 @@ on:
       - 'manga.json'
   
   schedule:
-    - cron: '17 0 * * *'  # 00:17 WIB setiap hari
+    - cron: '17 0 * * *'  # 00:17 WIB
   
   workflow_dispatch:
   
@@ -59,4 +59,25 @@ jobs:
           else
             git commit -m "📊 Auto-update [skip ci]"
             git push origin main
+          fi
+      
+      # ✅ NEW STEP: Trigger website update
+      - name: 📢 Trigger Website Rebuild
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          REPO_NAME: ${{ github.event.repository.name }}
+        run: |
+          if [ -n "$PAT_TOKEN" ]; then
+            echo "📡 Triggering website update for: $REPO_NAME"
+            
+            response=$(curl -s -X POST \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer $PAT_TOKEN" \
+              https://api.github.com/repos/nurananto/nuranantoscans/dispatches \
+              -d "{\"event_type\":\"manga-updated\",\"client_payload\":{\"repo\":\"$REPO_NAME\"}}")
+            
+            echo "✅ Website update triggered!"
+            echo "Response: $response"
+          else
+            echo "⚠️ PAT_TOKEN not found, skipping website trigger"
           fi
