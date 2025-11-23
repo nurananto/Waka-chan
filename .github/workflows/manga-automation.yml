@@ -48,21 +48,60 @@ jobs:
       - name: 📖 Update chapter views
         run: node manga-automation.js update-chapters
       
+      - name: 🔍 Check for Changes (Commit)
+        id: check_changes
+        run: |
+          if git diff --quiet manga.json manga-config.json pending-views.json pending-chapter-views.json 2>/dev/null; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ No changes detected"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "✅ Changes detected!"
+          fi
+      
+      - name: 🔍 Check for Structural Changes (Website Trigger)
+        id: check_structural
+        run: |
+          # Check hanya chapters & config (BUKAN views)
+          git diff --quiet manga.json manga-config.json 2>/dev/null
+          if [ $? -eq 0 ]; then
+            # No diff = no structural changes
+            echo "has_structural_changes=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ No structural changes (chapter/config unchanged)"
+          else
+            # Has diff = check if it's only views
+            if git diff manga.json | grep -E '"views":|"pendingViews":' > /dev/null 2>&1; then
+              # Check if ONLY views changed (no other changes)
+              git diff manga.json | grep -vE '"views":|"pendingViews":|"lastUpdated":' | grep -E '^\+|^\-' > /dev/null 2>&1
+              if [ $? -eq 0 ]; then
+                # Ada perubahan selain views
+                echo "has_structural_changes=true" >> $GITHUB_OUTPUT
+                echo "✅ Structural changes detected (not just views)!"
+              else
+                # Hanya views yang berubah
+                echo "has_structural_changes=false" >> $GITHUB_OUTPUT
+                echo "ℹ️ Only view counts changed (skip website trigger)"
+              fi
+            else
+              # Ada perubahan tapi bukan views
+              echo "has_structural_changes=true" >> $GITHUB_OUTPUT
+              echo "✅ Structural changes detected!"
+            fi
+          fi
+      
       - name: 💾 Commit and push
+        if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git pull origin main --rebase || true
           git add manga.json manga-config.json pending-views.json pending-chapter-views.json 2>/dev/null || true
-          if git diff --staged --quiet; then
-            echo "✅ No changes"
-          else
-            git commit -m "📊 Auto-update [skip ci]"
-            git push origin main
-          fi
+          git commit -m "📊 Auto-update [skip ci]"
+          git push origin main
       
-      # ✅ NEW STEP: Trigger website update
+      # ✅ FIXED: Only trigger website for structural changes (chapters/config), NOT views
       - name: 📢 Trigger Website Rebuild
+        if: steps.check_structural.outputs.has_structural_changes == 'true'
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
           REPO_NAME: ${{ github.event.repository.name }}
@@ -81,3 +120,13 @@ jobs:
           else
             echo "⚠️ PAT_TOKEN not found, skipping website trigger"
           fi
+      
+      - name: ℹ️ No Structural Changes - Skip Website Trigger
+        if: steps.check_structural.outputs.has_structural_changes == 'false'
+        run: |
+          echo "ℹ️ No structural changes (only views updated or no changes)"
+          echo "⏭️ Skipping website trigger"
+          echo "✅ Website will only be triggered for:"
+          echo "   - New chapters (manifest.json)"
+          echo "   - Config changes (manga-config.json)"
+          echo "   - Chapter content changes"
