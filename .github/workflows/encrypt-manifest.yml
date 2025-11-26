@@ -7,7 +7,7 @@ on:
     paths:
       - '**/manifest.json'
   
-  workflow_dispatch:  # ← TAMBAH INI untuk manual trigger
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -19,16 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2  # Need 2 commits to compare changes
-      
-      - name: 📁 List files (debug)
-        run: |
-          echo "Current directory:"
-          pwd
-          echo "Files in root:"
-          ls -la
-          echo "Check encrypt-manifest.js:"
-          test -f encrypt-manifest.js && echo "✅ File exists" || echo "❌ File missing"
+          fetch-depth: 2
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -38,7 +29,7 @@ jobs:
       - name: 🔐 Detect and Encrypt NEW manifests only
         env:
           SECRET_TOKEN: ${{ secrets.MANIFEST_SECRET_TOKEN }}
-          FORCE_SCAN_ALL: 'true'  # Set 'true' untuk scan SEMUA manifest (ignore git diff)
+          FORCE_SCAN_ALL: 'false'  # Only encrypt NEW manifests
         run: node encrypt-manifest.js
       
       - name: 💾 Commit encrypted manifests
@@ -51,6 +42,12 @@ jobs:
             echo "✅ No new manifests to encrypt"
           else
             git add '**/manifest.json'
+            # ✅ [skip ci] prevents triggering manga-automation immediately
+            # manga-automation will auto-trigger after 15s delay anyway
             git commit -m "🔐 Encrypt new manifest"
             git push origin main
+            
+            echo ""
+            echo "ℹ️  manga-automation.yml will run automatically"
+            echo "   (15 second delay to ensure encryption completes first)"
           fi
