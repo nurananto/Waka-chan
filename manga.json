@@ -15,7 +15,7 @@
       "Slice of Life"
     ],
     "status": "END",
-    "views": 327,
+    "views": 334,
     "links": {
       "mangadex": "https://mangadex.org/title/57fe3f00-8626-462b-8f75-fce0e6faa6be/a-hidden-side-to-my-crush",
       "raw": "https://www.comico.jp/comic/908"
@@ -34,7 +34,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 77
+      "views": 80
     },
     "26": {
       "title": "Chapter 26",
@@ -44,7 +44,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 13
+      "views": 14
     },
     "27": {
       "title": "Chapter 27",
@@ -284,9 +284,119 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 125
+      "views": 128
+    },
+    "51": {
+      "title": "Chapter 51",
+      "chapter": 51,
+      "folder": "51",
+      "uploadDate": "2025-11-30T12:37:40+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "52": {
+      "title": "Chapter 52",
+      "chapter": 52,
+      "folder": "52",
+      "uploadDate": "2025-11-30T12:37:40+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "53": {
+      "title": "Chapter 53",
+      "chapter": 53,
+      "folder": "53",
+      "uploadDate": "2025-11-30T12:37:40+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "54": {
+      "title": "Chapter 54",
+      "chapter": 54,
+      "folder": "54",
+      "uploadDate": "2025-11-30T12:37:40+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "55": {
+      "title": "Chapter 55",
+      "chapter": 55,
+      "folder": "55",
+      "uploadDate": "2025-11-30T12:37:40+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "56": {
+      "title": "Chapter 56",
+      "chapter": 56,
+      "folder": "56",
+      "uploadDate": "2025-11-30T12:37:40+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "57": {
+      "title": "Chapter 57",
+      "chapter": 57,
+      "folder": "57",
+      "uploadDate": "2025-11-30T12:37:40+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "58": {
+      "title": "Chapter 58",
+      "chapter": 58,
+      "folder": "58",
+      "uploadDate": "2025-11-30T12:37:40+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "59": {
+      "title": "Chapter 59",
+      "chapter": 59,
+      "folder": "59",
+      "uploadDate": "2025-11-30T12:37:40+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "60": {
+      "title": "Chapter 60",
+      "chapter": 60,
+      "folder": "60",
+      "uploadDate": "2025-11-30T12:37:40+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "58.5": {
+      "title": "Chapter 58.5",
+      "chapter": 58.5,
+      "folder": "58.5",
+      "uploadDate": "2025-11-30T12:37:40+07:00",
+      "totalPages": 6,
+      "pages": 6,
+      "locked": false,
+      "views": 0
     }
   },
-  "lastUpdated": "2025-11-30T00:14:16+07:00",
-  "lastChapterUpdate": "2025-11-22T16:15:06+07:00"
+  "lastUpdated": "2025-11-30T12:38:47+07:00",
+  "lastChapterUpdate": "2025-11-30T12:37:40+07:00"
 }
