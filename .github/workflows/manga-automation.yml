@@ -159,27 +159,49 @@ jobs:
             echo "has_structural_changes=true" >> $GITHUB_OUTPUT
             echo "🎉 First-time generation detected!"
             echo "is_first_time=true" >> $GITHUB_OUTPUT
-          else
-            # ✅ ONLY trigger for: manifest, config, chapters (NOT views/pending files)
-            if git diff HEAD~1 HEAD --name-only 2>/dev/null | grep -qE '(manifest\.json|manga-config\.json|chapters/)'; then
+            exit 0
+          fi
+          
+          # ✅ NEW: Check if manga.json has chapter changes (not just views)
+          if [ -f manga.json ]; then
+            # Count chapters in current manga.json
+            CURRENT_CHAPTERS=$(jq '.chapters | length' manga.json 2>/dev/null || echo "0")
+            
+            # Try to get old chapter count from previous commit
+            OLD_CHAPTERS=$(git show HEAD~1:manga.json 2>/dev/null | jq '.chapters | length' 2>/dev/null || echo "0")
+            
+            echo "📊 Chapter count: $OLD_CHAPTERS → $CURRENT_CHAPTERS"
+            
+            # If chapter count changed = structural change
+            if [ "$CURRENT_CHAPTERS" != "$OLD_CHAPTERS" ]; then
               echo "has_structural_changes=true" >> $GITHUB_OUTPUT
-              echo "✅ Structural changes detected"
+              echo "✅ Chapter count changed (structural)"
               echo "is_first_time=false" >> $GITHUB_OUTPUT
-            else
-              # Check if ONLY views changed
-              CHANGED_FILES=$(git diff HEAD~1 HEAD --name-only 2>/dev/null | tr '\n' ' ')
-              if echo "$CHANGED_FILES" | grep -qE '(pending-views\.json|pending-chapter-views\.json)' && \
-                 ! echo "$CHANGED_FILES" | grep -qvE '(pending-views\.json|pending-chapter-views\.json|manga\.json)'; then
-                echo "has_structural_changes=false" >> $GITHUB_OUTPUT
-                echo "ℹ️ Only view counter updated (no structural changes)"
-              else
-                # manga.json changed but not just views
-                echo "has_structural_changes=true" >> $GITHUB_OUTPUT
-                echo "✅ Structural data changed"
-              fi
-              echo "is_first_time=false" >> $GITHUB_OUTPUT
+              exit 0
             fi
           fi
+          
+          # Check manifest/config changes in git diff
+          if git diff HEAD~1 HEAD --name-only 2>/dev/null | grep -qE '(manifest\.json|manga-config\.json|chapters/)'; then
+            echo "has_structural_changes=true" >> $GITHUB_OUTPUT
+            echo "✅ Manifest/config changed"
+            echo "is_first_time=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          # Check if ONLY views changed
+          CHANGED_FILES=$(git diff HEAD~1 HEAD --name-only 2>/dev/null | tr '\n' ' ')
+          if echo "$CHANGED_FILES" | grep -qE '(pending-views\.json|pending-chapter-views\.json)' && \
+             ! echo "$CHANGED_FILES" | grep -qvE '(pending-views\.json|pending-chapter-views\.json|manga\.json)'; then
+            echo "has_structural_changes=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ Only view counter updated (no structural changes)"
+          else
+            # manga.json changed but not just views
+            echo "has_structural_changes=true" >> $GITHUB_OUTPUT
+            echo "✅ Structural data changed"
+          fi
+          
+          echo "is_first_time=false" >> $GITHUB_OUTPUT
 
       - name: 🚀 Trigger website rebuild
         if: |
@@ -219,6 +241,7 @@ jobs:
           echo "   - New chapters (manifest.json changes)"
           echo "   - Config changes (manga-config.json)"
           echo "   - Chapter folder changes"
+          echo "   - Chapter count changes"
           echo ""
           echo "❌ NOT triggered for:"
           echo "   - View counter updates (pending-views.json)"
