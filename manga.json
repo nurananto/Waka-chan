@@ -15,7 +15,7 @@
       "Slice of Life"
     ],
     "status": "END",
-    "views": 395,
+    "views": 422,
     "links": {
       "mangadex": "https://mangadex.org/title/57fe3f00-8626-462b-8f75-fce0e6faa6be/a-hidden-side-to-my-crush",
       "raw": "https://www.comico.jp/comic/908"
@@ -34,7 +34,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 82
+      "views": 84
     },
     "26": {
       "title": "Chapter 26",
@@ -664,7 +664,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 1
+      "views": 2
     },
     "89": {
       "title": "Chapter 89",
@@ -674,7 +674,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 3
+      "views": 4
     },
     "90": {
       "title": "Chapter 90",
@@ -694,7 +694,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 0
+      "views": 1
     },
     "92": {
       "title": "Chapter 92",
@@ -734,7 +734,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 1
+      "views": 2
     },
     "96": {
       "title": "Chapter 96",
@@ -804,7 +804,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 1
+      "views": 2
     },
     "103": {
       "title": "Chapter 103",
@@ -854,7 +854,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 1
+      "views": 2
     },
     "108": {
       "title": "Chapter 108",
@@ -874,7 +874,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 1
+      "views": 3
     },
     "110": {
       "title": "Chapter 110",
@@ -884,7 +884,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 20
+      "views": 30
     },
     "58.5": {
       "title": "Chapter 58.5",
@@ -894,7 +894,7 @@
       "totalPages": 6,
       "pages": 6,
       "locked": false,
-      "views": 0
+      "views": 1
     },
     "103.5": {
       "title": "Chapter 103.5",
@@ -904,9 +904,9 @@
       "totalPages": 1,
       "pages": 1,
       "locked": false,
-      "views": 1
+      "views": 3
     }
   },
-  "lastUpdated": "2025-12-02T00:19:25+07:00",
+  "lastUpdated": "2025-12-03T00:20:12+07:00",
   "lastChapterUpdate": "2025-12-01T07:16:38+07:00"
 }
