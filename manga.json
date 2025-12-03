@@ -15,7 +15,7 @@
       "Slice of Life"
     ],
     "status": "END",
-    "views": 422,
+    "views": 440,
     "links": {
       "mangadex": "https://mangadex.org/title/57fe3f00-8626-462b-8f75-fce0e6faa6be/a-hidden-side-to-my-crush",
       "raw": "https://www.comico.jp/comic/908"
@@ -254,7 +254,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 11
+      "views": 12
     },
     "48": {
       "title": "Chapter 48",
@@ -584,7 +584,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 0
+      "views": 1
     },
     "81": {
       "title": "Chapter 81",
@@ -624,7 +624,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 0
+      "views": 1
     },
     "85": {
       "title": "Chapter 85",
@@ -634,7 +634,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 0
+      "views": 1
     },
     "86": {
       "title": "Chapter 86",
@@ -644,7 +644,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 3
+      "views": 5
     },
     "87": {
       "title": "Chapter 87",
@@ -654,7 +654,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 1
+      "views": 2
     },
     "88": {
       "title": "Chapter 88",
@@ -694,7 +694,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 1
+      "views": 2
     },
     "92": {
       "title": "Chapter 92",
@@ -874,7 +874,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 3
+      "views": 4
     },
     "110": {
       "title": "Chapter 110",
@@ -884,7 +884,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 30
+      "views": 35
     },
     "58.5": {
       "title": "Chapter 58.5",
@@ -907,6 +907,6 @@
       "views": 3
     }
   },
-  "lastUpdated": "2025-12-03T00:20:12+07:00",
+  "lastUpdated": "2025-12-04T00:20:18+07:00",
   "lastChapterUpdate": "2025-12-01T07:16:38+07:00"
 }
