@@ -15,7 +15,7 @@
       "Slice of Life"
     ],
     "status": "END",
-    "views": 536,
+    "views": 550,
     "links": {
       "mangadex": "https://mangadex.org/title/57fe3f00-8626-462b-8f75-fce0e6faa6be/a-hidden-side-to-my-crush",
       "raw": "https://www.comico.jp/comic/908"
@@ -23,7 +23,9 @@
     "repoUrl": "https://raw.githubusercontent.com/nurananto/Waka-chan/main/",
     "imagePrefix": "Image",
     "imageFormat": "webp",
-    "lockedChapters": [],
+    "lockedChapters": [
+      "112"
+    ],
     "type": "webtoon"
   },
   "chapters": {
@@ -35,7 +37,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 91
+      "views": 92
     },
     "26": {
       "title": "Chapter 26",
@@ -45,7 +47,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 17
+      "views": 18
     },
     "27": {
       "title": "Chapter 27",
@@ -155,7 +157,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 4
+      "views": 6
     },
     "38": {
       "title": "Chapter 38",
@@ -255,7 +257,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 12
+      "views": 13
     },
     "48": {
       "title": "Chapter 48",
@@ -895,7 +897,17 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 66
+      "views": 71
+    },
+    "112": {
+      "title": "Chapter 112",
+      "chapter": 112,
+      "folder": "112",
+      "uploadDate": "2025-12-05T23:52:35+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": true,
+      "views": 0
     },
     "58.5": {
       "title": "Chapter 58.5",
@@ -925,9 +937,9 @@
       "totalPages": 4,
       "pages": 4,
       "locked": false,
-      "views": 9
+      "views": 15
     }
   },
-  "lastUpdated": "2025-12-05T19:43:22+07:00",
-  "lastChapterUpdate": "2025-12-05T19:00:51+07:00"
+  "lastUpdated": "2025-12-05T23:53:30+07:00",
+  "lastChapterUpdate": "2025-12-05T23:52:35+07:00"
 }
