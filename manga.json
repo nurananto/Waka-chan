@@ -15,7 +15,7 @@
       "Slice of Life"
     ],
     "status": "END",
-    "views": 520,
+    "views": 536,
     "links": {
       "mangadex": "https://mangadex.org/title/57fe3f00-8626-462b-8f75-fce0e6faa6be/a-hidden-side-to-my-crush",
       "raw": "https://www.comico.jp/comic/908"
@@ -23,9 +23,7 @@
     "repoUrl": "https://raw.githubusercontent.com/nurananto/Waka-chan/main/",
     "imagePrefix": "Image",
     "imageFormat": "webp",
-    "lockedChapters": [
-      "111.5"
-    ],
+    "lockedChapters": [],
     "type": "webtoon"
   },
   "chapters": {
@@ -897,7 +895,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 49
+      "views": 66
     },
     "58.5": {
       "title": "Chapter 58.5",
@@ -923,13 +921,13 @@
       "title": "Chapter 111.5",
       "chapter": 111.5,
       "folder": "111.5",
-      "uploadDate": "2025-12-05T18:59:38+07:00",
+      "uploadDate": "2025-12-05T19:00:51+07:00",
       "totalPages": 4,
       "pages": 4,
-      "locked": true,
-      "views": 0
+      "locked": false,
+      "views": 9
     }
   },
-  "lastUpdated": "2025-12-05T19:01:36+07:00",
-  "lastChapterUpdate": "2025-12-05T18:59:38+07:00"
+  "lastUpdated": "2025-12-05T19:43:22+07:00",
+  "lastChapterUpdate": "2025-12-05T19:00:51+07:00"
 }
