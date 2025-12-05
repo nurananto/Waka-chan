@@ -1,9 +1,9 @@
 {
   "chapters": {
     "25": {
-      "pendingViews": 3,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-05T03:21:31.226Z",
-      "lastUpdate": "2025-12-05T08:25:34+07:00"
+      "lastUpdate": "2025-12-05T11:14:27+07:00"
     },
     "26": {
       "pendingViews": 0,
@@ -76,9 +76,9 @@
       "lastUpdate": "2025-11-28T00:14:48+07:00"
     },
     "40": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-05T02:22:24.658Z",
-      "lastUpdate": "2025-11-28T00:14:48+07:00"
+      "lastUpdate": "2025-12-05T11:14:27+07:00"
     },
     "41": {
       "pendingViews": 0,
@@ -356,19 +356,19 @@
       "lastUpdate": "2025-12-03T00:20:12+07:00"
     },
     "96": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-05T03:21:40.699Z",
-      "lastUpdate": "2025-12-02T00:19:25+07:00"
+      "lastUpdate": "2025-12-05T11:14:27+07:00"
     },
     "97": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-05T03:21:51.057Z",
-      "lastUpdate": "2025-12-02T00:19:25+07:00"
+      "lastUpdate": "2025-12-05T11:14:27+07:00"
     },
     "98": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-05T03:21:57.367Z",
-      "lastUpdate": "2025-12-02T00:19:25+07:00"
+      "lastUpdate": "2025-12-05T11:14:27+07:00"
     },
     "99": {
       "pendingViews": 0,
@@ -426,14 +426,14 @@
       "lastUpdate": "2025-12-04T00:20:18+07:00"
     },
     "110": {
-      "pendingViews": 2,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-05T04:01:31.493Z",
-      "lastUpdate": "2025-12-05T08:54:15+07:00"
+      "lastUpdate": "2025-12-05T11:14:27+07:00"
     },
     "111": {
-      "pendingViews": 3,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-05T04:05:19.078Z",
-      "lastUpdate": "2025-12-05T08:54:15+07:00"
+      "lastUpdate": "2025-12-05T11:14:27+07:00"
     },
     "58.5": {
       "pendingViews": 0,
@@ -446,5 +446,5 @@
       "lastUpdate": "2025-12-03T00:20:12+07:00"
     }
   },
-  "lastUpdated": "2025-12-05T08:54:15+07:00"
+  "lastUpdated": "2025-12-05T11:14:27+07:00"
 }
