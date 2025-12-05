@@ -46,6 +46,9 @@ jobs:
           node-version: '18'
 
       - name: 📚 Generate manga.json
+        env:
+          SECRET_TOKEN: ${{ secrets.MANIFEST_SECRET_TOKEN }}
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
         run: node manga-automation.js generate
 
       - name: 🔄 Sync chapters
