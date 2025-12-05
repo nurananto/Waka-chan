@@ -24,5 +24,7 @@
   "repoName": "Waka-chan",
   "imagePrefix": "Image",
   "imageFormat": "webp",
-  "lockedChapters": []
+  "lockedChapters": [
+    "112"
+  ]
 }
