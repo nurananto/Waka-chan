@@ -1,4 +1,5 @@
 {
+  "type": "webtoon",
   "title": "Waka-chan wa Kyou mo Azatoi",
   "alternativeTitle": "和歌ちゃんは今日もあざとい",
   "cover": "https://cdn.nuranantoscans.my.id/covers/waka-chan-c15f762d-5437-4f73-aa85-64a7b686ddba.webp",
@@ -23,5 +24,7 @@
   "repoName": "Waka-chan",
   "imagePrefix": "Image",
   "imageFormat": "webp",
-  "lockedChapters": []
+  "lockedChapters": [
+    "111"
+  ]
 }
