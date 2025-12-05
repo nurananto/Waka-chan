@@ -33,7 +33,7 @@ jobs:
           sleep 30
           echo "✅ Wait complete, starting manga automation..."
 
-      - name: 📥 Checkout repository
+      - name: 🔥 Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -48,7 +48,7 @@ jobs:
       - name: 📚 Generate manga.json
         env:
           SECRET_TOKEN: ${{ secrets.MANIFEST_SECRET_TOKEN }}
-          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          CLOUDFLARE_WORKER_URL: ${{ secrets.CLOUDFLARE_WORKER_URL }}
         run: node manga-automation.js generate
 
       - name: 🔄 Sync chapters
@@ -238,7 +238,7 @@ jobs:
           steps.check_changes.outputs.has_changes != 'true' ||
           steps.structural_check.outputs.has_structural_changes != 'true'
         run: |
-          echo "⭐️ Skipping website trigger"
+          echo "⭕️ Skipping website trigger"
           echo "✅ Website will only be triggered for:"
           echo "   - First-time manga.json creation"
           echo "   - New chapters (manifest.json changes)"
