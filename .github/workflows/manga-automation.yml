@@ -1,4 +1,4 @@
-name: 📄 Manga Automation
+name: 🔄 Manga Automation
 
 on:
   push:
@@ -46,17 +46,48 @@ jobs:
           node-version: '18'
 
       # ========================================
-      # ✅ NEW: SYNC CODES FROM CLOUDFLARE KV
+      # ✅ NEW: AUTO-CREATE chapter-codes-local.json (WEBTOON ONLY)
       # ========================================
-      - name: 🔄 Sync codes from Cloudflare KV (if missing)
+      - name: 📝 Ensure chapter-codes-local.json exists (Webtoon only)
+        run: |
+          # Check manga type from manga-config.json
+          MANGA_TYPE=$(jq -r '.type // "manga"' manga-config.json)
+          
+          if [ "$MANGA_TYPE" = "webtoon" ]; then
+            echo "📱 Type: webtoon - checking chapter-codes-local.json..."
+            
+            if [ ! -f chapter-codes-local.json ]; then
+              echo "🆕 Creating empty chapter-codes-local.json..."
+              echo "{}" > chapter-codes-local.json
+              echo "✅ chapter-codes-local.json created"
+            else
+              echo "✅ chapter-codes-local.json already exists"
+            fi
+          else
+            echo "📖 Type: $MANGA_TYPE - skipping chapter-codes-local.json"
+          fi
+
+      # ========================================
+      # ✅ SYNC CODES FROM CLOUDFLARE KV (WEBTOON ONLY)
+      # ========================================
+      - name: 🔄 Sync codes from Cloudflare KV (Webtoon only)
         env:
           CLOUDFLARE_WORKER_URL: ${{ secrets.CLOUDFLARE_WORKER_URL }}
         run: |
-          if [ ! -f chapter-codes-local.json ]; then
-            echo "🆕 chapter-codes-local.json not found - syncing from Cloudflare KV..."
+          # Check manga type
+          MANGA_TYPE=$(jq -r '.type // "manga"' manga-config.json)
+          
+          if [ "$MANGA_TYPE" != "webtoon" ]; then
+            echo "📖 Type: $MANGA_TYPE - skipping code sync"
+            exit 0
+          fi
+          
+          # Check if file is empty or just has {}
+          if [ ! -s chapter-codes-local.json ] || [ "$(cat chapter-codes-local.json | tr -d '[:space:]')" = "{}" ]; then
+            echo "📥 chapter-codes-local.json is empty - syncing from Cloudflare KV..."
             node manga-automation.js sync-codes || true
           else
-            echo "✅ chapter-codes-local.json exists"
+            echo "✅ chapter-codes-local.json has data"
           fi
 
       - name: 📚 Generate manga.json
@@ -74,11 +105,16 @@ jobs:
       - name: 📖 Update chapter views
         run: node manga-automation.js update-chapters
 
-      - name: 📝 Check for changes
+      - name: 🔍 Check for changes
         id: check_changes
         run: |
-          # ✅ Include chapter-codes-local.json
-          git add -A manga.json pending-views.json pending-chapter-views.json chapter-codes-local.json
+          # ✅ Add files only if they exist
+          git add -A manga.json pending-views.json pending-chapter-views.json
+          
+          # ✅ Add chapter-codes-local.json if exists and not empty
+          if [ -f chapter-codes-local.json ]; then
+            git add chapter-codes-local.json
+          fi
           
           if git diff --staged --quiet; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
@@ -140,7 +176,8 @@ jobs:
             # Re-apply stashed changes
             if git stash pop; then
               # Re-add files
-              git add -A manga.json pending-views.json pending-chapter-views.json chapter-codes-local.json
+              git add -A manga.json pending-views.json pending-chapter-views.json
+              [ -f chapter-codes-local.json ] && git add chapter-codes-local.json || true
               
               # Re-commit with original message
               git commit -m "$COMMIT_MSG" || {
@@ -151,10 +188,12 @@ jobs:
               echo "⚠️ Stash pop failed, trying manual resolution..."
               
               # Handle conflict: keep our changes for pending files
-              git checkout --ours pending-views.json pending-chapter-views.json chapter-codes-local.json 2>/dev/null || true
+              git checkout --ours pending-views.json pending-chapter-views.json 2>/dev/null || true
+              [ -f chapter-codes-local.json ] && git checkout --ours chapter-codes-local.json 2>/dev/null || true
               git checkout --theirs manga.json 2>/dev/null || true
               
-              git add -A manga.json pending-views.json pending-chapter-views.json chapter-codes-local.json
+              git add -A manga.json pending-views.json pending-chapter-views.json
+              [ -f chapter-codes-local.json ] && git add chapter-codes-local.json || true
               git commit -m "$COMMIT_MSG" || {
                 echo "⚠️ No changes to commit after conflict resolution"
                 exit 0
@@ -167,7 +206,7 @@ jobs:
           echo "❌ Failed to push after 5 attempts"
           exit 1
 
-      - name: 📄 Check structural changes
+      - name: 🔄 Check structural changes
         id: structural_check
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
