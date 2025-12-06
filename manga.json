@@ -15,7 +15,7 @@
       "Slice of Life"
     ],
     "status": "END",
-    "views": 563,
+    "views": 596,
     "links": {
       "mangadex": "https://mangadex.org/title/57fe3f00-8626-462b-8f75-fce0e6faa6be/a-hidden-side-to-my-crush",
       "raw": "https://www.comico.jp/comic/908"
@@ -35,7 +35,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 92
+      "views": 95
     },
     "26": {
       "title": "Chapter 26",
@@ -895,7 +895,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 71
+      "views": 74
     },
     "112": {
       "title": "Chapter 112",
@@ -905,7 +905,687 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 5
+      "views": 11
+    },
+    "113": {
+      "title": "Chapter 113",
+      "chapter": 113,
+      "folder": "113",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "114": {
+      "title": "Chapter 114",
+      "chapter": 114,
+      "folder": "114",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "115": {
+      "title": "Chapter 115",
+      "chapter": 115,
+      "folder": "115",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "116": {
+      "title": "Chapter 116",
+      "chapter": 116,
+      "folder": "116",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "117": {
+      "title": "Chapter 117",
+      "chapter": 117,
+      "folder": "117",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "118": {
+      "title": "Chapter 118",
+      "chapter": 118,
+      "folder": "118",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "119": {
+      "title": "Chapter 119",
+      "chapter": 119,
+      "folder": "119",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "120": {
+      "title": "Chapter 120",
+      "chapter": 120,
+      "folder": "120",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "121": {
+      "title": "Chapter 121",
+      "chapter": 121,
+      "folder": "121",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "122": {
+      "title": "Chapter 122",
+      "chapter": 122,
+      "folder": "122",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "123": {
+      "title": "Chapter 123",
+      "chapter": 123,
+      "folder": "123",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "124": {
+      "title": "Chapter 124",
+      "chapter": 124,
+      "folder": "124",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "125": {
+      "title": "Chapter 125",
+      "chapter": 125,
+      "folder": "125",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "126": {
+      "title": "Chapter 126",
+      "chapter": 126,
+      "folder": "126",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "127": {
+      "title": "Chapter 127",
+      "chapter": 127,
+      "folder": "127",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "128": {
+      "title": "Chapter 128",
+      "chapter": 128,
+      "folder": "128",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "129": {
+      "title": "Chapter 129",
+      "chapter": 129,
+      "folder": "129",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "130": {
+      "title": "Chapter 130",
+      "chapter": 130,
+      "folder": "130",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "131": {
+      "title": "Chapter 131",
+      "chapter": 131,
+      "folder": "131",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "132": {
+      "title": "Chapter 132",
+      "chapter": 132,
+      "folder": "132",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "133": {
+      "title": "Chapter 133",
+      "chapter": 133,
+      "folder": "133",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "134": {
+      "title": "Chapter 134",
+      "chapter": 134,
+      "folder": "134",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "135": {
+      "title": "Chapter 135",
+      "chapter": 135,
+      "folder": "135",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "136": {
+      "title": "Chapter 136",
+      "chapter": 136,
+      "folder": "136",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "137": {
+      "title": "Chapter 137",
+      "chapter": 137,
+      "folder": "137",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "138": {
+      "title": "Chapter 138",
+      "chapter": 138,
+      "folder": "138",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "139": {
+      "title": "Chapter 139",
+      "chapter": 139,
+      "folder": "139",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "140": {
+      "title": "Chapter 140",
+      "chapter": 140,
+      "folder": "140",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "141": {
+      "title": "Chapter 141",
+      "chapter": 141,
+      "folder": "141",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "142": {
+      "title": "Chapter 142",
+      "chapter": 142,
+      "folder": "142",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "143": {
+      "title": "Chapter 143",
+      "chapter": 143,
+      "folder": "143",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "144": {
+      "title": "Chapter 144",
+      "chapter": 144,
+      "folder": "144",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "145": {
+      "title": "Chapter 145",
+      "chapter": 145,
+      "folder": "145",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "146": {
+      "title": "Chapter 146",
+      "chapter": 146,
+      "folder": "146",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "147": {
+      "title": "Chapter 147",
+      "chapter": 147,
+      "folder": "147",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "148": {
+      "title": "Chapter 148",
+      "chapter": 148,
+      "folder": "148",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "149": {
+      "title": "Chapter 149",
+      "chapter": 149,
+      "folder": "149",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "150": {
+      "title": "Chapter 150",
+      "chapter": 150,
+      "folder": "150",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "151": {
+      "title": "Chapter 151",
+      "chapter": 151,
+      "folder": "151",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "152": {
+      "title": "Chapter 152",
+      "chapter": 152,
+      "folder": "152",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "153": {
+      "title": "Chapter 153",
+      "chapter": 153,
+      "folder": "153",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 36,
+      "pages": 36,
+      "locked": false,
+      "views": 0
+    },
+    "154": {
+      "title": "Chapter 154",
+      "chapter": 154,
+      "folder": "154",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 30,
+      "pages": 30,
+      "locked": false,
+      "views": 0
+    },
+    "155": {
+      "title": "Chapter 155",
+      "chapter": 155,
+      "folder": "155",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 26,
+      "pages": 26,
+      "locked": false,
+      "views": 0
+    },
+    "156": {
+      "title": "Chapter 156",
+      "chapter": 156,
+      "folder": "156",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 30,
+      "pages": 30,
+      "locked": false,
+      "views": 0
+    },
+    "157": {
+      "title": "Chapter 157",
+      "chapter": 157,
+      "folder": "157",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 22,
+      "pages": 22,
+      "locked": false,
+      "views": 0
+    },
+    "158": {
+      "title": "Chapter 158",
+      "chapter": 158,
+      "folder": "158",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 24,
+      "pages": 24,
+      "locked": false,
+      "views": 0
+    },
+    "159": {
+      "title": "Chapter 159",
+      "chapter": 159,
+      "folder": "159",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 24,
+      "pages": 24,
+      "locked": false,
+      "views": 0
+    },
+    "160": {
+      "title": "Chapter 160",
+      "chapter": 160,
+      "folder": "160",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 50,
+      "pages": 50,
+      "locked": false,
+      "views": 0
+    },
+    "161": {
+      "title": "Chapter 161",
+      "chapter": 161,
+      "folder": "161",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 50,
+      "pages": 50,
+      "locked": false,
+      "views": 0
+    },
+    "162": {
+      "title": "Chapter 162",
+      "chapter": 162,
+      "folder": "162",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 50,
+      "pages": 50,
+      "locked": false,
+      "views": 0
+    },
+    "163": {
+      "title": "Chapter 163",
+      "chapter": 163,
+      "folder": "163",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 50,
+      "pages": 50,
+      "locked": false,
+      "views": 0
+    },
+    "164": {
+      "title": "Chapter 164",
+      "chapter": 164,
+      "folder": "164",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 50,
+      "pages": 50,
+      "locked": false,
+      "views": 0
+    },
+    "165": {
+      "title": "Chapter 165",
+      "chapter": 165,
+      "folder": "165",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 50,
+      "pages": 50,
+      "locked": false,
+      "views": 0
+    },
+    "166": {
+      "title": "Chapter 166",
+      "chapter": 166,
+      "folder": "166",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 50,
+      "pages": 50,
+      "locked": false,
+      "views": 0
+    },
+    "167": {
+      "title": "Chapter 167",
+      "chapter": 167,
+      "folder": "167",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 50,
+      "pages": 50,
+      "locked": false,
+      "views": 0
+    },
+    "168": {
+      "title": "Chapter 168",
+      "chapter": 168,
+      "folder": "168",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 50,
+      "pages": 50,
+      "locked": false,
+      "views": 0
+    },
+    "169": {
+      "title": "Chapter 169",
+      "chapter": 169,
+      "folder": "169",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 15,
+      "pages": 15,
+      "locked": false,
+      "views": 0
+    },
+    "170": {
+      "title": "Chapter 170",
+      "chapter": 170,
+      "folder": "170",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 15,
+      "pages": 15,
+      "locked": false,
+      "views": 0
+    },
+    "171": {
+      "title": "Chapter 171",
+      "chapter": 171,
+      "folder": "171",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 15,
+      "pages": 15,
+      "locked": false,
+      "views": 0
+    },
+    "172": {
+      "title": "Chapter 172",
+      "chapter": 172,
+      "folder": "172",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "173": {
+      "title": "Chapter 173",
+      "chapter": 173,
+      "folder": "173",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 20,
+      "pages": 20,
+      "locked": false,
+      "views": 0
+    },
+    "174": {
+      "title": "Chapter 174",
+      "chapter": 174,
+      "folder": "174",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 24,
+      "pages": 24,
+      "locked": false,
+      "views": 0
+    },
+    "175": {
+      "title": "Chapter 175",
+      "chapter": 175,
+      "folder": "175",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 22,
+      "pages": 22,
+      "locked": false,
+      "views": 0
+    },
+    "176": {
+      "title": "Chapter 176",
+      "chapter": 176,
+      "folder": "176",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 22,
+      "pages": 22,
+      "locked": false,
+      "views": 0
+    },
+    "177": {
+      "title": "Chapter 177",
+      "chapter": 177,
+      "folder": "177",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "178": {
+      "title": "Chapter 178",
+      "chapter": 178,
+      "folder": "178",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "179": {
+      "title": "Chapter 179",
+      "chapter": 179,
+      "folder": "179",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "180": {
+      "title": "Chapter 180",
+      "chapter": 180,
+      "folder": "180",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
     },
     "58.5": {
       "title": "Chapter 58.5",
@@ -935,9 +1615,69 @@
       "totalPages": 4,
       "pages": 4,
       "locked": false,
-      "views": 19
+      "views": 20
+    },
+    "126.5": {
+      "title": "Chapter 126.5",
+      "chapter": 126.5,
+      "folder": "126.5",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 4,
+      "pages": 4,
+      "locked": false,
+      "views": 0
+    },
+    "139.5": {
+      "title": "Chapter 139.5",
+      "chapter": 139.5,
+      "folder": "139.5",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 3,
+      "pages": 3,
+      "locked": false,
+      "views": 0
+    },
+    "143.5": {
+      "title": "Chapter 143.5",
+      "chapter": 143.5,
+      "folder": "143.5",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 20,
+      "pages": 20,
+      "locked": false,
+      "views": 0
+    },
+    "161.5": {
+      "title": "Chapter 161.5",
+      "chapter": 161.5,
+      "folder": "161.5",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 4,
+      "pages": 4,
+      "locked": false,
+      "views": 0
+    },
+    "171.5": {
+      "title": "Chapter 171.5",
+      "chapter": 171.5,
+      "folder": "171.5",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 2,
+      "pages": 2,
+      "locked": false,
+      "views": 0
+    },
+    "178.5": {
+      "title": "Chapter 178.5",
+      "chapter": 178.5,
+      "folder": "178.5",
+      "uploadDate": "2025-12-06T18:18:49+07:00",
+      "totalPages": 8,
+      "pages": 8,
+      "locked": false,
+      "views": 0
     }
   },
-  "lastUpdated": "2025-12-06T08:28:48+07:00",
-  "lastChapterUpdate": "2025-12-05T23:52:35+07:00"
+  "lastUpdated": "2025-12-06T18:46:48+07:00",
+  "lastChapterUpdate": "2025-12-06T18:18:49+07:00"
 }
