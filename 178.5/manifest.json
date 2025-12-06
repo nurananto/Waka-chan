@@ -3,13 +3,15 @@
   "upload_date": "2025-12-06 18:07:51",
   "total_pages": 8,
   "pages": [
-    "https://cdn.nuranantoscans.my.id/Waka-chan/178.5/Image01.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/178.5/Image02.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/178.5/Image03.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/178.5/Image04.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/178.5/Image05.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/178.5/Image06.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/178.5/Image07.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/178.5/Image08.webp"
-  ]
+    "71ab3c60f219cf440ce58caaebe9fdcc:ffb83d943bcac22e1ddcb494cef3820be91b36613d20fa1f62cce8fba7f8c300c65a94fcb6d487c4de0a94c5793d188a4b004c4a6a911a1bc78bccc8ed7a0662",
+    "83916504edca1d970886bf3fe5cb4c39:90a9d01091da6c1b137adcb81dac558c0cb29c34e6cc0d7e4bc627443d775dd11702988ebf656b197a0dd20db3540730a68d9ce563c24fe693a691f4de9a2762",
+    "87ab27fca7959e9b84a9c381d675ec63:87d72902b7d2c08ba663e19a1a8eaeda18d7a985aa8b212559469df14e51bdf1ab58de39495f0f0f6c6ecaeb592451b3c7a9d7a12ed7972abef8fbc7c6e3dcd8",
+    "28d416e07298b7b2d8b5f8359a460aad:ec2e6e14e3c2bda01299d022fd54f34a584962302034685fb15c2d9929661c01c8a1313616a9f2adcd077ead3d639480ac0f66af719a8463e0b4d73d17ea7475",
+    "ec4fd946ed3ac1631069b1addde06e42:a3ae935f0c767d1cf5e6aa7d07f3a649efe2ecd8343f6491dcf7f64357dd072ff5e1e19a4069cb1bd5f9a96c9acfb7a9e8696f23715fa2dc1c70912d6e80d775",
+    "cec874fd4356130b89be025b503a7fed:569e58497035a5e3040f16a49933a4dd27f99869511848ce37934dc20de875d32a8dbe2e3bea91d52948664a66a9cf5fc03a3778fcedac450a33d5ed6b46a07e",
+    "e93ef142b723b8a66984466cd71b55a2:40622ac45b2d22b5baeb2d0434e6a13923414220c831710b2b3c990048c89d24f5bf373f038b4a276dce15cdd255c1361e56b46f0b3685afc99104b009582ed3",
+    "a5e2efe0aeb1442f45dc441a452cd313:11df8db3aa3299a86ba1488a1a1a650312db7461caf7ed39e9477eee3c86fa0918cb3c608dbb04f0302b14bbfc741ec13463867ad95db3e6903b7e06b779ccab"
+  ],
+  "encrypted": true,
+  "encryption_version": "1.0"
 }
