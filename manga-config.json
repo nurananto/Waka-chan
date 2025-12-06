@@ -15,6 +15,7 @@
     "Slice of Life"
   ],
   "status": "END",
+  "endChapter": 223,
   "views": 0,
   "links": {
     "mangadex": "https://mangadex.org/title/57fe3f00-8626-462b-8f75-fce0e6faa6be/a-hidden-side-to-my-crush",
@@ -24,7 +25,5 @@
   "repoName": "Waka-chan",
   "imagePrefix": "Image",
   "imageFormat": "webp",
-  "lockedChapters": [
-    "112"
-  ]
+  "lockedChapters": []
 }

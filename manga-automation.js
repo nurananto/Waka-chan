@@ -1,15 +1,19 @@
 /**
- * MANGA-AUTOMATION.JS - CLOUDFLARE WORKERS VERSION (COMPLETE)
+ * MANGA-AUTOMATION.JS - CLOUDFLARE WORKERS VERSION v8.0
+ * 
+ * ✅ NEW: Auto-generate chapter-codes-local.json if missing
+ * ✅ NEW: Sync codes from Cloudflare KV
  * 
  * Environment Variables:
  * - CLOUDFLARE_WORKER_URL: https://manga-code-validator.YOUR_SUBDOMAIN.workers.dev
  * - SECRET_TOKEN: Manifest encryption secret
  * 
  * Usage:
- * node manga-automation.js generate         → Generate manga.json
- * node manga-automation.js sync             → Sync chapters
- * node manga-automation.js update-views     → Update manga views
- * node manga-automation.js update-chapters  → Update chapter views
+ * node manga-automation.js generate          → Generate manga.json
+ * node manga-automation.js sync              → Sync chapters
+ * node manga-automation.js update-views      → Update manga views
+ * node manga-automation.js update-chapters   → Update chapter views
+ * node manga-automation.js sync-codes        → Sync codes from Cloudflare KV
  */
 
 const fs = require('fs');
@@ -31,6 +35,62 @@ const CLOUDFLARE_WORKER_URL = process.env.CLOUDFLARE_WORKER_URL || '';
 // ============================================
 // CLOUDFLARE API FUNCTIONS
 // ============================================
+
+async function fetchCodesFromCloudflare(repoName) {
+    if (!CLOUDFLARE_WORKER_URL) {
+        console.log('⚠️  CLOUDFLARE_WORKER_URL not configured');
+        return null;
+    }
+
+    console.log(`📥 Fetching codes from Cloudflare KV for ${repoName}...`);
+
+    const postData = JSON.stringify({
+        action: 'listCodes',
+        repoName: repoName
+    });
+
+    return new Promise((resolve) => {
+        const url = new URL(CLOUDFLARE_WORKER_URL);
+
+        const options = {
+            hostname: url.hostname,
+            path: url.pathname,
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Content-Length': Buffer.byteLength(postData)
+            }
+        };
+
+        const req = https.request(options, (res) => {
+            let data = '';
+            res.on('data', (chunk) => { data += chunk; });
+            res.on('end', () => {
+                try {
+                    const response = JSON.parse(data);
+                    if (response.success && response.codes) {
+                        console.log(`✅ Fetched ${Object.keys(response.codes).length} codes from KV`);
+                        resolve(response.codes);
+                    } else {
+                        console.error('❌ Fetch failed:', response.message || 'Unknown error');
+                        resolve(null);
+                    }
+                } catch (error) {
+                    console.error('❌ Parse error:', error.message);
+                    resolve(null);
+                }
+            });
+        });
+
+        req.on('error', (error) => {
+            console.error('❌ Request error:', error.message);
+            resolve(null);
+        });
+
+        req.write(postData);
+        req.end();
+    });
+}
 
 async function uploadCodesToCloudflare(repoName, codes) {
     if (!CLOUDFLARE_WORKER_URL) {
@@ -176,26 +236,53 @@ async function generateChapterCodes(config) {
         return;
     }
 
-    console.log('🔐 Type: webtoon - generating chapter codes...');
+    console.log('📝 Type: webtoon - generating chapter codes...');
 
     const lockedChapters = config.lockedChapters || [];
 
     if (lockedChapters.length === 0) {
         console.log('ℹ️  No locked chapters found');
+        
+        // ✅ Check if there are codes to cleanup
+        let existingCodes = loadJSON('chapter-codes-local.json') || {};
+        if (Object.keys(existingCodes).length > 0) {
+            console.log('\n🧹 No locked chapters but local codes exist - cleaning up...');
+            const chaptersToDelete = Object.keys(existingCodes);
+            await deleteCodesFromCloudflare(repoName, chaptersToDelete);
+            saveJSON('chapter-codes-local.json', {});
+            console.log('✅ All codes cleaned up');
+        }
         return;
     }
 
-    // Load existing codes from local tracking
-    const existingCodes = loadJSON('chapter-codes-local.json') || {};
+    // ✅ NEW: Auto-generate chapter-codes-local.json if missing
+    let existingCodes = loadJSON('chapter-codes-local.json');
+    
+    if (!existingCodes) {
+        console.log('\n🆕 chapter-codes-local.json not found - creating from Cloudflare KV...');
+        
+        // Try to fetch from Cloudflare KV
+        const kvCodes = await fetchCodesFromCloudflare(repoName);
+        
+        if (kvCodes && Object.keys(kvCodes).length > 0) {
+            console.log('✅ Synced codes from Cloudflare KV');
+            existingCodes = kvCodes;
+            saveJSON('chapter-codes-local.json', existingCodes);
+        } else {
+            console.log('📝 Creating new empty chapter-codes-local.json');
+            existingCodes = {};
+            saveJSON('chapter-codes-local.json', existingCodes);
+        }
+    }
 
-    console.log('\n🔑 Processing locked chapters:');
+    console.log('\n🔐 Processing locked chapters:');
 
     const newCodesToUpload = [];
     const allCodes = { ...existingCodes };
 
     lockedChapters.forEach(chapterFolder => {
         if (existingCodes[chapterFolder]) {
-            console.log(`  ✓ ${chapterFolder}: code already exists`);
+            console.log(`  ✔ ${chapterFolder}: code already exists`);
             console.log(`     Plain code: ${existingCodes[chapterFolder]}`);
         } else {
             const plainCode = generateRandomCode(16);
@@ -222,21 +309,62 @@ async function generateChapterCodes(config) {
         }
     }
 
-    // Check for removed locked chapters
+    // ✅ IMPROVED: Check for removed locked chapters
     const removedChapters = Object.keys(existingCodes).filter(ch => !lockedChapters.includes(ch));
     if (removedChapters.length > 0) {
         console.log(`\n🗑️  Chapters no longer locked: ${removedChapters.join(', ')}`);
-        await deleteCodesFromCloudflare(repoName, removedChapters);
+        const deleteSuccess = await deleteCodesFromCloudflare(repoName, removedChapters);
 
-        removedChapters.forEach(ch => delete allCodes[ch]);
-        saveJSON('chapter-codes-local.json', allCodes);
+        if (deleteSuccess) {
+            removedChapters.forEach(ch => delete allCodes[ch]);
+            saveJSON('chapter-codes-local.json', allCodes);
+            console.log('✅ Local tracking updated');
+        }
     }
 
     console.log(`\n📊 Stats:`);
     console.log(`   New codes: ${newCodesToUpload.length}`);
     console.log(`   Existing: ${Object.keys(existingCodes).length}`);
     console.log(`   Removed: ${removedChapters.length}`);
-    console.log(`   Total: ${lockedChapters.length}`);
+    console.log(`   Total active: ${lockedChapters.length}`);
+}
+
+// ============================================
+// COMMAND: SYNC CODES FROM CLOUDFLARE KV
+// ============================================
+
+async function commandSyncCodes() {
+    console.log('🔄 Syncing chapter codes from Cloudflare KV...\n');
+    
+    const config = loadConfig();
+    const repoName = config.repoName;
+    
+    console.log(`📦 Repository: ${repoName}`);
+    
+    // Fetch codes from Cloudflare KV
+    const kvCodes = await fetchCodesFromCloudflare(repoName);
+    
+    if (!kvCodes) {
+        console.error('❌ Failed to fetch codes from Cloudflare KV');
+        process.exit(1);
+    }
+    
+    if (Object.keys(kvCodes).length === 0) {
+        console.log('ℹ️  No codes found in Cloudflare KV');
+        saveJSON('chapter-codes-local.json', {});
+        console.log('✅ Created empty chapter-codes-local.json');
+        return;
+    }
+    
+    // Save to local file
+    if (saveJSON('chapter-codes-local.json', kvCodes)) {
+        console.log('\n✅ chapter-codes-local.json updated!');
+        console.log(`📊 Total codes synced: ${Object.keys(kvCodes).length}`);
+        console.log('\n📋 Synced codes:');
+        Object.entries(kvCodes).forEach(([chapter, code]) => {
+            console.log(`   ${chapter}: ${code}`);
+        });
+    }
 }
 
 // ============================================
@@ -484,7 +612,7 @@ function generateChaptersData(config, oldMangaData, isFirstTime) {
         
         const isInLockedList = config.lockedChapters.includes(chapterName);
         
-        // ✅ NEW LOGIC: Webtoon type locked if in list (regardless of manifest)
+        // ✅ WEBTOON LOGIC: Webtoon locked if in list (regardless of manifest)
         let isLocked;
         const type = config.type || 'manga';
         
@@ -551,7 +679,7 @@ function generateChaptersData(config, oldMangaData, isFirstTime) {
     });
     
     if (updatedLockedChapters.length !== config.lockedChapters.length) {
-        console.log('\n🔓 Auto-removing uploaded chapters from lockedChapters...');
+        console.log('\n📝 Auto-removing uploaded chapters from lockedChapters...');
         const removed = config.lockedChapters.filter(ch => !updatedLockedChapters.includes(ch));
         console.log(`   Removed: ${removed.join(', ')}`);
         
@@ -640,7 +768,7 @@ async function commandGenerate() {
             imagePrefix: config.imagePrefix || 'Image',
             imageFormat: config.imageFormat || 'jpg',
             lockedChapters: config.lockedChapters || [],
-            type: config.type || 'manga'  // ✅ ADD TYPE
+            type: config.type || 'manga'
         },
         chapters: chapters,
         lastUpdated: getWIBTimestamp(),
@@ -658,7 +786,7 @@ async function commandGenerate() {
         const totalChapterViews = Object.values(chapters).reduce((sum, ch) => sum + (ch.views || 0), 0);
         
         console.log(`🔒 Locked chapters: ${lockedCount}`);
-        console.log(`🔓 Unlocked chapters: ${unlockedCount}`);
+        console.log(`📖 Unlocked chapters: ${unlockedCount}`);
         if (oneshotCount > 0) {
             console.log(`🎯 Oneshot chapters: ${oneshotCount}`);
         }
@@ -680,7 +808,7 @@ async function commandGenerate() {
 // ============================================
 
 function ensurePendingFilesExist() {
-    console.log('🔍 Checking pending files...\n');
+    console.log('📝 Checking pending files...\n');
     
     let created = false;
     
@@ -901,8 +1029,9 @@ async function main() {
     const command = process.argv[2];
     
     console.log('╔═══════════════════════════════════════╗');
-    console.log('║   MANGA AUTOMATION v7.0 - FINAL      ║');
+    console.log('║   MANGA AUTOMATION v8.0 - FINAL      ║');
     console.log('║  ✅ Cloudflare Workers Integration   ║');
+    console.log('║  ✅ Auto-generate local tracking     ║');
     console.log('║  ✅ Webtoon Type Support             ║');
     console.log('║  🎯 Oneshot Support                  ║');
     console.log('╚═══════════════════════════════════════╝\n');
@@ -920,12 +1049,16 @@ async function main() {
         case 'update-chapters':
             commandUpdateChapterViews();
             break;
+        case 'sync-codes':
+            await commandSyncCodes();
+            break;
         default:
             console.log('Usage:');
             console.log('  node manga-automation.js generate         → Generate manga.json');
             console.log('  node manga-automation.js sync             → Sync chapters');
             console.log('  node manga-automation.js update-views     → Update manga views');
             console.log('  node manga-automation.js update-chapters  → Update chapter views');
+            console.log('  node manga-automation.js sync-codes       → Sync codes from Cloudflare KV');
             process.exit(1);
     }
 }
