@@ -1,9 +1,9 @@
 {
   "chapters": {
     "25": {
-      "pendingViews": 2,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-07T00:28:27.628Z",
-      "lastUpdate": "2025-12-07T00:14:17+07:00"
+      "lastUpdate": "2025-12-07T07:43:28+07:00"
     },
     "26": {
       "pendingViews": 0,
@@ -761,9 +761,9 @@
       "lastUpdate": "2025-12-06T18:46:48+07:00"
     },
     "177": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-07T00:12:23.380Z",
-      "lastUpdate": "2025-12-06T18:46:48+07:00"
+      "lastUpdate": "2025-12-07T07:43:28+07:00"
     },
     "178": {
       "pendingViews": 0,
@@ -771,14 +771,229 @@
       "lastUpdate": "2025-12-06T18:46:48+07:00"
     },
     "179": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-07T00:11:49.038Z",
-      "lastUpdate": "2025-12-06T18:46:48+07:00"
+      "lastUpdate": "2025-12-07T07:43:28+07:00"
     },
     "180": {
-      "pendingViews": 5,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-07T00:26:43.011Z",
-      "lastUpdate": "2025-12-07T00:14:17+07:00"
+      "lastUpdate": "2025-12-07T07:43:28+07:00"
+    },
+    "181": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "182": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "183": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "184": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "185": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "186": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "187": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "188": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "189": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "190": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "191": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "192": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "193": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "194": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "195": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "196": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "197": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "198": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "199": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "200": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "201": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "202": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "203": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "204": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "205": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "206": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "207": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "208": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "209": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "210": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "211": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "212": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "213": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "214": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "215": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "216": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "217": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "218": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "219": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "220": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "221": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "222": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "223": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
     },
     "58.5": {
       "pendingViews": 0,
@@ -824,7 +1039,47 @@
       "pendingViews": 0,
       "lastIncrement": "2025-12-06T18:46:48+07:00",
       "lastUpdate": "2025-12-06T18:46:48+07:00"
+    },
+    "183.5": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "186.5": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "190.5": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "195.5": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "201.5": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "204.5": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "208.5": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
+    },
+    "210.5": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-07T07:43:27+07:00",
+      "lastUpdate": "2025-12-07T07:43:27+07:00"
     }
   },
-  "lastUpdated": "2025-12-07T00:14:17+07:00"
+  "lastUpdated": "2025-12-07T07:43:27+07:00"
 }

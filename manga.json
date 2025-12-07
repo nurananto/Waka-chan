@@ -15,7 +15,7 @@
       "Slice of Life"
     ],
     "status": "END",
-    "views": 607,
+    "views": 618,
     "links": {
       "mangadex": "https://mangadex.org/title/57fe3f00-8626-462b-8f75-fce0e6faa6be/a-hidden-side-to-my-crush",
       "raw": "https://www.comico.jp/comic/908"
@@ -35,7 +35,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 96
+      "views": 98
     },
     "26": {
       "title": "Chapter 26",
@@ -1555,7 +1555,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 0
+      "views": 1
     },
     "178": {
       "title": "Chapter 178",
@@ -1575,7 +1575,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 0
+      "views": 1
     },
     "180": {
       "title": "Chapter 180",
@@ -1585,7 +1585,437 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 3
+      "views": 8
+    },
+    "181": {
+      "title": "Chapter 181",
+      "chapter": 181,
+      "folder": "181",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "182": {
+      "title": "Chapter 182",
+      "chapter": 182,
+      "folder": "182",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "183": {
+      "title": "Chapter 183",
+      "chapter": 183,
+      "folder": "183",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "184": {
+      "title": "Chapter 184",
+      "chapter": 184,
+      "folder": "184",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "185": {
+      "title": "Chapter 185",
+      "chapter": 185,
+      "folder": "185",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "186": {
+      "title": "Chapter 186",
+      "chapter": 186,
+      "folder": "186",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "187": {
+      "title": "Chapter 187",
+      "chapter": 187,
+      "folder": "187",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "188": {
+      "title": "Chapter 188",
+      "chapter": 188,
+      "folder": "188",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "189": {
+      "title": "Chapter 189",
+      "chapter": 189,
+      "folder": "189",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "190": {
+      "title": "Chapter 190",
+      "chapter": 190,
+      "folder": "190",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 12,
+      "pages": 12,
+      "locked": false,
+      "views": 0
+    },
+    "191": {
+      "title": "Chapter 191",
+      "chapter": 191,
+      "folder": "191",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "192": {
+      "title": "Chapter 192",
+      "chapter": 192,
+      "folder": "192",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "193": {
+      "title": "Chapter 193",
+      "chapter": 193,
+      "folder": "193",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "194": {
+      "title": "Chapter 194",
+      "chapter": 194,
+      "folder": "194",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "195": {
+      "title": "Chapter 195",
+      "chapter": 195,
+      "folder": "195",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "196": {
+      "title": "Chapter 196",
+      "chapter": 196,
+      "folder": "196",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "197": {
+      "title": "Chapter 197",
+      "chapter": 197,
+      "folder": "197",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "198": {
+      "title": "Chapter 198",
+      "chapter": 198,
+      "folder": "198",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "199": {
+      "title": "Chapter 199",
+      "chapter": 199,
+      "folder": "199",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "200": {
+      "title": "Chapter 200",
+      "chapter": 200,
+      "folder": "200",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "201": {
+      "title": "Chapter 201",
+      "chapter": 201,
+      "folder": "201",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "202": {
+      "title": "Chapter 202",
+      "chapter": 202,
+      "folder": "202",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "203": {
+      "title": "Chapter 203",
+      "chapter": 203,
+      "folder": "203",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "204": {
+      "title": "Chapter 204",
+      "chapter": 204,
+      "folder": "204",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "205": {
+      "title": "Chapter 205",
+      "chapter": 205,
+      "folder": "205",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "206": {
+      "title": "Chapter 206",
+      "chapter": 206,
+      "folder": "206",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "207": {
+      "title": "Chapter 207",
+      "chapter": 207,
+      "folder": "207",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "208": {
+      "title": "Chapter 208",
+      "chapter": 208,
+      "folder": "208",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "209": {
+      "title": "Chapter 209",
+      "chapter": 209,
+      "folder": "209",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "210": {
+      "title": "Chapter 210",
+      "chapter": 210,
+      "folder": "210",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "211": {
+      "title": "Chapter 211",
+      "chapter": 211,
+      "folder": "211",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "212": {
+      "title": "Chapter 212",
+      "chapter": 212,
+      "folder": "212",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "213": {
+      "title": "Chapter 213",
+      "chapter": 213,
+      "folder": "213",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "214": {
+      "title": "Chapter 214",
+      "chapter": 214,
+      "folder": "214",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "215": {
+      "title": "Chapter 215",
+      "chapter": 215,
+      "folder": "215",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "216": {
+      "title": "Chapter 216",
+      "chapter": 216,
+      "folder": "216",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "217": {
+      "title": "Chapter 217",
+      "chapter": 217,
+      "folder": "217",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "218": {
+      "title": "Chapter 218",
+      "chapter": 218,
+      "folder": "218",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "219": {
+      "title": "Chapter 219",
+      "chapter": 219,
+      "folder": "219",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 3,
+      "pages": 3,
+      "locked": false,
+      "views": 0
+    },
+    "220": {
+      "title": "Chapter 220",
+      "chapter": 220,
+      "folder": "220",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "221": {
+      "title": "Chapter 221",
+      "chapter": 221,
+      "folder": "221",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "222": {
+      "title": "Chapter 222",
+      "chapter": 222,
+      "folder": "222",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 32,
+      "pages": 32,
+      "locked": false,
+      "views": 0
+    },
+    "223": {
+      "title": "Chapter 223",
+      "chapter": 223,
+      "folder": "223",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 33,
+      "pages": 33,
+      "locked": false,
+      "views": 0
     },
     "58.5": {
       "title": "Chapter 58.5",
@@ -1676,8 +2106,88 @@
       "pages": 8,
       "locked": false,
       "views": 0
+    },
+    "183.5": {
+      "title": "Chapter 183.5",
+      "chapter": 183.5,
+      "folder": "183.5",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 6,
+      "pages": 6,
+      "locked": false,
+      "views": 0
+    },
+    "186.5": {
+      "title": "Chapter 186.5",
+      "chapter": 186.5,
+      "folder": "186.5",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 6,
+      "pages": 6,
+      "locked": false,
+      "views": 0
+    },
+    "190.5": {
+      "title": "Chapter 190.5",
+      "chapter": 190.5,
+      "folder": "190.5",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 6,
+      "pages": 6,
+      "locked": false,
+      "views": 0
+    },
+    "195.5": {
+      "title": "Chapter 195.5",
+      "chapter": 195.5,
+      "folder": "195.5",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 7,
+      "pages": 7,
+      "locked": false,
+      "views": 0
+    },
+    "201.5": {
+      "title": "Chapter 201.5",
+      "chapter": 201.5,
+      "folder": "201.5",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 7,
+      "pages": 7,
+      "locked": false,
+      "views": 0
+    },
+    "204.5": {
+      "title": "Chapter 204.5",
+      "chapter": 204.5,
+      "folder": "204.5",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 7,
+      "pages": 7,
+      "locked": false,
+      "views": 0
+    },
+    "208.5": {
+      "title": "Chapter 208.5",
+      "chapter": 208.5,
+      "folder": "208.5",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 5,
+      "pages": 5,
+      "locked": false,
+      "views": 0
+    },
+    "210.5": {
+      "title": "Chapter 210.5",
+      "chapter": 210.5,
+      "folder": "210.5",
+      "uploadDate": "2025-12-07T07:42:27+07:00",
+      "totalPages": 4,
+      "pages": 4,
+      "locked": false,
+      "views": 0
     }
   },
-  "lastUpdated": "2025-12-07T00:14:17+07:00",
-  "lastChapterUpdate": "2025-12-06T18:18:49+07:00"
+  "lastUpdated": "2025-12-07T07:43:28+07:00",
+  "lastChapterUpdate": "2025-12-07T07:42:27+07:00"
 }
