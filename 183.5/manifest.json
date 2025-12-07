@@ -3,11 +3,13 @@
   "upload_date": "2025-12-07 07:41:09",
   "total_pages": 6,
   "pages": [
-    "https://cdn.nuranantoscans.my.id/Waka-chan/183.5/Image01.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/183.5/Image02.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/183.5/Image03.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/183.5/Image04.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/183.5/Image05.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/183.5/Image06.webp"
-  ]
+    "26eef7dff3524c72f199aa1f03578f20:cd5628b2cbbb03c36d72ccfd0f6edf1b19ea604fc3bec0a8ef006df69d57225ca54e8756153a906b0d9310a6cf8d37a9b55a0661c02c58ae1e3ef05ddc91dd2d",
+    "0218517e7e0733f0d26262f664a0b740:1424ca8b4553418bbe57d417b4009a0dd35b55724a9a145c35eaf62b5097a518ca1f965df4f0dd6200922204398031179505a171614a566b9d359aa828eb2dd4",
+    "57c9308b7ff41ca5b86178736684a690:951c9de64ff7f446d606dd7f77f0ab3588b4c41656a750ca8e3c4be8e0d39c0599500e6942fbcce36b319f5c0156e06be738ba8c36a390bde7972c78e762f0f6",
+    "dd0aba2def1b503b80ad3be6cf455985:468f18cd5695da9a0bcae175dd51c1a1d2f0878616632aac4cee3b44c90fbd7375f13cf7803293553cb66770465027387c2a86ac2cf86b6883d3eef19c3ea874",
+    "4bf67b570d56829342c9ce93222be96b:82d426df57a73db3aa80b428d642eb4f88c49a39a802f70f7dc63343df57a4969d7e7911e1674e558dba0440cd06add131516e81375ad27b3fbd47cf03283023",
+    "85dc9dc97d29f6021e7d1ded82b39cd4:9fd05940acd4eab70c05b49e959e07fc4c1b0eb898da2c2ed8eec697941118597c500a49ba0f295c3579653e6bdab694ed72c3ca91b98769b4535f2055aff24a"
+  ],
+  "encrypted": true,
+  "encryption_version": "1.0"
 }

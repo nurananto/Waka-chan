@@ -3,9 +3,11 @@
   "upload_date": "2025-12-07 07:41:09",
   "total_pages": 4,
   "pages": [
-    "https://cdn.nuranantoscans.my.id/Waka-chan/210.5/Image01.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/210.5/Image02.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/210.5/Image03.webp",
-    "https://cdn.nuranantoscans.my.id/Waka-chan/210.5/Image04.webp"
-  ]
+    "7e9b593dd4a6b780ba2d743d4c52e091:3e458d3711e1f84132ac7f65f42098ac4db4346a9d478106d0dbac6cda6345981911329ec6a8afbc6b53033ea991afb5b2c5dfa1f5b7dd89b3419ad8aec58f7d",
+    "c1c85800871eabd8c9edaf14df30098f:1b1a3fb36fb10c5b4d49e1c9926694573fcf7dd9f6bf018ada817051b176d0c7396dab31986c54afc21311e08863d2520e9360b9e490146aefdac62278144a5d",
+    "0da190ee63d922f5dd2da4adb30ada54:8d09fcd34d897f9461bd7ddf6ee1222d34abf4f925aa6684f3292a4d9658d3d2abcd8d5c005ba1bbff413d9a97c8dcfae30c33f40f66e13c0ce69fd8df9887c2",
+    "3cf037d4d0ec18ab774eca59478c58f7:c84b57165842a405088c868036d34b2a19b9a713e6644839d0db97768ca4d9b6faa806c2b0ad961cf9ca24808e851b9ef488f2efd29919f1651103ee393c38e2"
+  ],
+  "encrypted": true,
+  "encryption_version": "1.0"
 }
