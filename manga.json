@@ -24,7 +24,8 @@
     "imagePrefix": "Image",
     "imageFormat": "webp",
     "lockedChapters": [],
-    "type": "webtoon"
+    "type": "webtoon",
+    "endChapter": 223
   },
   "chapters": {
     "25": {
@@ -2188,6 +2189,6 @@
       "views": 0
     }
   },
-  "lastUpdated": "2025-12-07T07:43:28+07:00",
-  "lastChapterUpdate": "2025-12-07T07:42:27+07:00"
+  "lastUpdated": "2025-12-10T00:18:07+07:00",
+  "lastChapterUpdate": "2025-12-10T00:18:07+07:00"
 }
