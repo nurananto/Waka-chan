@@ -15,7 +15,7 @@
       "Slice of Life"
     ],
     "status": "END",
-    "views": 1070,
+    "views": 1076,
     "links": {
       "mangadex": "https://mangadex.org/title/57fe3f00-8626-462b-8f75-fce0e6faa6be/a-hidden-side-to-my-crush",
       "raw": "https://www.comico.jp/comic/908"
@@ -986,7 +986,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 5
+      "views": 7
     },
     "121": {
       "title": "Chapter 121",
@@ -996,7 +996,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 3
+      "views": 9
     },
     "122": {
       "title": "Chapter 122",
@@ -1916,7 +1916,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 26
+      "views": 27
     },
     "214": {
       "title": "Chapter 214",
@@ -1926,7 +1926,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 25
+      "views": 26
     },
     "215": {
       "title": "Chapter 215",
@@ -1936,7 +1936,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 30
+      "views": 31
     },
     "216": {
       "title": "Chapter 216",
@@ -1946,7 +1946,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 26
+      "views": 27
     },
     "217": {
       "title": "Chapter 217",
@@ -1956,7 +1956,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 28
+      "views": 30
     },
     "218": {
       "title": "Chapter 218",
@@ -1966,7 +1966,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 40
+      "views": 42
     },
     "219": {
       "title": "Chapter 219",
@@ -1976,7 +1976,7 @@
       "totalPages": 3,
       "pages": 3,
       "locked": false,
-      "views": 34
+      "views": 36
     },
     "220": {
       "title": "Chapter 220",
@@ -1986,7 +1986,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 42
+      "views": 44
     },
     "221": {
       "title": "Chapter 221",
@@ -1996,7 +1996,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 38
+      "views": 41
     },
     "222": {
       "title": "Chapter 222",
@@ -2006,7 +2006,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 64
+      "views": 65
     },
     "223": {
       "title": "Chapter 223",
@@ -2016,7 +2016,7 @@
       "totalPages": 33,
       "pages": 33,
       "locked": false,
-      "views": 185
+      "views": 187
     },
     "58.5": {
       "title": "Chapter 58.5",
@@ -2189,6 +2189,6 @@
       "views": 20
     }
   },
-  "lastUpdated": "2025-12-27T00:15:06+07:00",
+  "lastUpdated": "2025-12-28T00:15:08+07:00",
   "lastChapterUpdate": "2025-12-07T07:42:27+07:00"
 }
