@@ -1,9 +1,9 @@
 {
   "chapters": {
     "25": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2026-01-07T13:12:05.005Z",
-      "lastUpdate": "2026-01-07T00:21:01+07:00"
+      "lastUpdate": "2026-01-08T00:24:18+07:00"
     },
     "26": {
       "pendingViews": 0,
@@ -111,9 +111,9 @@
       "lastUpdate": "2025-12-11T00:20:03+07:00"
     },
     "47": {
-      "pendingViews": 2,
+      "pendingViews": 0,
       "lastIncrement": "2026-01-07T00:53:40.189Z",
-      "lastUpdate": "2025-12-27T00:15:06+07:00"
+      "lastUpdate": "2026-01-08T00:24:18+07:00"
     },
     "48": {
       "pendingViews": 0,
@@ -966,9 +966,9 @@
       "lastUpdate": "2026-01-06T00:20:38+07:00"
     },
     "218": {
-      "pendingViews": 3,
+      "pendingViews": 0,
       "lastIncrement": "2026-01-07T13:12:24.487Z",
-      "lastUpdate": "2026-01-06T00:20:38+07:00"
+      "lastUpdate": "2026-01-08T00:24:18+07:00"
     },
     "219": {
       "pendingViews": 0,
@@ -976,14 +976,14 @@
       "lastUpdate": "2026-01-06T00:20:38+07:00"
     },
     "220": {
-      "pendingViews": 2,
+      "pendingViews": 0,
       "lastIncrement": "2026-01-07T06:13:54.235Z",
-      "lastUpdate": "2026-01-06T00:20:38+07:00"
+      "lastUpdate": "2026-01-08T00:24:18+07:00"
     },
     "221": {
-      "pendingViews": 2,
+      "pendingViews": 0,
       "lastIncrement": "2026-01-07T06:56:24.588Z",
-      "lastUpdate": "2026-01-06T00:20:38+07:00"
+      "lastUpdate": "2026-01-08T00:24:18+07:00"
     },
     "222": {
       "pendingViews": 0,
@@ -991,9 +991,9 @@
       "lastUpdate": "2026-01-06T00:20:38+07:00"
     },
     "223": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2026-01-07T00:12:31.583Z",
-      "lastUpdate": "2026-01-07T00:21:01+07:00"
+      "lastUpdate": "2026-01-08T00:24:18+07:00"
     },
     "58.5": {
       "pendingViews": 0,
@@ -1081,5 +1081,5 @@
       "lastUpdate": "2026-01-06T00:20:38+07:00"
     }
   },
-  "lastUpdated": "2026-01-07T00:21:01+07:00"
+  "lastUpdated": "2026-01-08T00:24:18+07:00"
 }

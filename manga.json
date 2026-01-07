@@ -15,7 +15,7 @@
       "Slice of Life"
     ],
     "status": "END",
-    "views": 1196,
+    "views": 1199,
     "links": {
       "mangadex": "https://mangadex.org/title/57fe3f00-8626-462b-8f75-fce0e6faa6be/a-hidden-side-to-my-crush",
       "raw": "https://www.comico.jp/comic/908"
@@ -36,7 +36,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 211
+      "views": 212
     },
     "26": {
       "title": "Chapter 26",
@@ -256,7 +256,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 20
+      "views": 22
     },
     "48": {
       "title": "Chapter 48",
@@ -1966,7 +1966,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 58
+      "views": 61
     },
     "219": {
       "title": "Chapter 219",
@@ -1986,7 +1986,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 60
+      "views": 62
     },
     "221": {
       "title": "Chapter 221",
@@ -1996,7 +1996,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 61
+      "views": 63
     },
     "222": {
       "title": "Chapter 222",
@@ -2016,7 +2016,7 @@
       "totalPages": 33,
       "pages": 33,
       "locked": false,
-      "views": 218
+      "views": 219
     },
     "58.5": {
       "title": "Chapter 58.5",
@@ -2189,6 +2189,6 @@
       "views": 28
     }
   },
-  "lastUpdated": "2026-01-07T00:21:01+07:00",
+  "lastUpdated": "2026-01-08T00:24:18+07:00",
   "lastChapterUpdate": "2025-12-07T07:42:27+07:00"
 }
