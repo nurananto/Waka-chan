@@ -15,7 +15,7 @@
       "Slice of Life"
     ],
     "status": "END",
-    "views": 1852,
+    "views": 1877,
     "links": {
       "mangadex": "https://mangadex.org/title/57fe3f00-8626-462b-8f75-fce0e6faa6be/a-hidden-side-to-my-crush",
       "raw": "https://www.comico.jp/comic/908"
@@ -296,7 +296,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 8
+      "views": 9
     },
     "52": {
       "title": "Chapter 52",
@@ -326,7 +326,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 7
+      "views": 8
     },
     "55": {
       "title": "Chapter 55",
@@ -346,7 +346,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 10
+      "views": 11
     },
     "57": {
       "title": "Chapter 57",
@@ -376,7 +376,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 20
+      "views": 21
     },
     "60": {
       "title": "Chapter 60",
@@ -396,7 +396,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 10
+      "views": 11
     },
     "62": {
       "title": "Chapter 62",
@@ -406,7 +406,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 9
+      "views": 10
     },
     "63": {
       "title": "Chapter 63",
@@ -446,7 +446,7 @@
       "totalPages": 36,
       "pages": 36,
       "locked": false,
-      "views": 10
+      "views": 11
     },
     "67": {
       "title": "Chapter 67",
@@ -1366,7 +1366,7 @@
       "totalPages": 24,
       "pages": 24,
       "locked": false,
-      "views": 20
+      "views": 21
     },
     "159": {
       "title": "Chapter 159",
@@ -1376,7 +1376,7 @@
       "totalPages": 24,
       "pages": 24,
       "locked": false,
-      "views": 21
+      "views": 22
     },
     "160": {
       "title": "Chapter 160",
@@ -1386,7 +1386,7 @@
       "totalPages": 50,
       "pages": 50,
       "locked": false,
-      "views": 30
+      "views": 31
     },
     "161": {
       "title": "Chapter 161",
@@ -1396,7 +1396,7 @@
       "totalPages": 50,
       "pages": 50,
       "locked": false,
-      "views": 20
+      "views": 21
     },
     "162": {
       "title": "Chapter 162",
@@ -1956,7 +1956,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 79
+      "views": 80
     },
     "218": {
       "title": "Chapter 218",
@@ -1966,7 +1966,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 107
+      "views": 108
     },
     "219": {
       "title": "Chapter 219",
@@ -1976,7 +1976,7 @@
       "totalPages": 3,
       "pages": 3,
       "locked": false,
-      "views": 82
+      "views": 83
     },
     "220": {
       "title": "Chapter 220",
@@ -1986,7 +1986,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 99
+      "views": 100
     },
     "221": {
       "title": "Chapter 221",
@@ -1996,7 +1996,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 101
+      "views": 102
     },
     "222": {
       "title": "Chapter 222",
@@ -2006,7 +2006,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 136
+      "views": 138
     },
     "223": {
       "title": "Chapter 223",
@@ -2016,7 +2016,7 @@
       "totalPages": 33,
       "pages": 33,
       "locked": false,
-      "views": 340
+      "views": 343
     },
     "58.5": {
       "title": "Chapter 58.5",
@@ -2026,7 +2026,7 @@
       "totalPages": 6,
       "pages": 6,
       "locked": false,
-      "views": 15
+      "views": 16
     },
     "103.5": {
       "title": "Chapter 103.5",
@@ -2189,6 +2189,6 @@
       "views": 53
     }
   },
-  "lastUpdated": "2026-02-27T19:00:53.019Z",
+  "lastUpdated": "2026-02-28T17:10:14.940Z",
   "lastChapterUpdate": "2025-12-07T07:42:27+07:00"
 }
