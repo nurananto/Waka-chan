@@ -12,9 +12,7 @@
 | Judul Alternatif | 和歌ちゃんは今日もあざとい |
 | Author | Shimamura |
 | Tipe | Webtoon (Berwarna) |
-| Status | Tamat (Chapter 223) |
 | Genre | Drama · Shounen · Comedy · Romance · School Life · Slice of Life |
-| Chapter | 216 chapter |
 
 ## Link
 
