@@ -15,7 +15,7 @@
       "Slice of Life"
     ],
     "status": "END",
-    "views": 2185,
+    "views": 2195,
     "links": {
       "mangadex": "https://mangadex.org/title/57fe3f00-8626-462b-8f75-fce0e6faa6be/a-hidden-side-to-my-crush",
       "raw": "https://www.comico.jp/comic/908"
@@ -1356,7 +1356,7 @@
       "totalPages": 22,
       "pages": 22,
       "locked": false,
-      "views": 21
+      "views": 22
     },
     "158": {
       "title": "Chapter 158",
@@ -1366,7 +1366,7 @@
       "totalPages": 24,
       "pages": 24,
       "locked": false,
-      "views": 22
+      "views": 23
     },
     "159": {
       "title": "Chapter 159",
@@ -1376,7 +1376,7 @@
       "totalPages": 24,
       "pages": 24,
       "locked": false,
-      "views": 23
+      "views": 24
     },
     "160": {
       "title": "Chapter 160",
@@ -1386,7 +1386,7 @@
       "totalPages": 50,
       "pages": 50,
       "locked": false,
-      "views": 32
+      "views": 33
     },
     "161": {
       "title": "Chapter 161",
@@ -1396,7 +1396,7 @@
       "totalPages": 50,
       "pages": 50,
       "locked": false,
-      "views": 23
+      "views": 24
     },
     "162": {
       "title": "Chapter 162",
@@ -1486,7 +1486,7 @@
       "totalPages": 15,
       "pages": 15,
       "locked": false,
-      "views": 23
+      "views": 24
     },
     "171": {
       "title": "Chapter 171",
@@ -1496,7 +1496,7 @@
       "totalPages": 15,
       "pages": 15,
       "locked": false,
-      "views": 19
+      "views": 20
     },
     "172": {
       "title": "Chapter 172",
@@ -1506,7 +1506,7 @@
       "totalPages": 32,
       "pages": 32,
       "locked": false,
-      "views": 17
+      "views": 18
     },
     "173": {
       "title": "Chapter 173",
@@ -1516,7 +1516,7 @@
       "totalPages": 20,
       "pages": 20,
       "locked": false,
-      "views": 19
+      "views": 20
     },
     "174": {
       "title": "Chapter 174",
@@ -2096,7 +2096,7 @@
       "totalPages": 2,
       "pages": 2,
       "locked": false,
-      "views": 17
+      "views": 18
     },
     "178.5": {
       "title": "Chapter 178.5",
@@ -2189,6 +2189,6 @@
       "views": 54
     }
   },
-  "lastUpdated": "2026-03-04T17:11:23.014Z",
+  "lastUpdated": "2026-03-04T19:01:47.265Z",
   "lastChapterUpdate": "2025-12-07T07:42:27+07:00"
 }
